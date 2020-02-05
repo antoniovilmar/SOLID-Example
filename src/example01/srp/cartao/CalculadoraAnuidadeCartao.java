@@ -27,7 +27,6 @@ public class CalculadoraAnuidadeCartao {
     return 250;
   }
 
-
   private double calcularAnuidadeParaCartaoInternacional(Cliente cliente) {
     if (cliente.temContaBancaria()) {
       return 0;

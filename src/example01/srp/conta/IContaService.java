@@ -22,6 +22,4 @@ public interface IContaService {
 
   void transferirContaCorrenteParaMesmoBanco(long contaDestinario, long contaTransferente);
 
-  void transferirContaPoupancaParaMesmoBanco(long contaDestinario, long contaTransferente);
-
 }

@@ -16,10 +16,12 @@ public class Cliente {
     return modalidadeCartao;
   }
 
-
-
   public boolean temContaBancaria() {
     return correntista;
+  }
+
+  public double getAnuidadeCartao() {
+    return this.modalidadeCartao.getCalculaAnuidadeCartao().calcular(this);
   }
 
 }
