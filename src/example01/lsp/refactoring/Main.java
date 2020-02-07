@@ -4,16 +4,18 @@ package example01.lsp.refactoring;
 public class Main {
 
   public static void main(String[] args) {
-    var retangulo = new Retangulo(3, 5);
-    var quadrado = new Quadrado(6);
+    var contaPoupanca = new ContaPoupanca(100);
+    var contaCorrente = new ContaCorrente(100);
 
-    imprimirArea(retangulo);
-    imprimirArea(quadrado);
+    transferir(contaPoupanca);
+    transferir(contaCorrente);
+
 
   }
 
-  private static void imprimirArea(IFormaGeometrica formaGeometrica) {
-    System.out.println(formaGeometrica.calcularArea());
+  private static void transferir(IConta conta) {
+    conta.transferir(100);
+    System.out.println(conta.mostrarSaldo());
   }
 
 }

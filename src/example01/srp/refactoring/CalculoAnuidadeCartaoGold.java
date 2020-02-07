@@ -1,4 +1,4 @@
-package example01.srp.cartao.refactoring;
+package example01.srp.refactoring;
 
 public class CalculoAnuidadeCartaoGold implements ICalculoAnuidadeCartao {
 

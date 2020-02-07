@@ -3,18 +3,19 @@ package example01.lsp;
 public class Main {
 
   public static void main(String[] args) {
-    var retangulo = new Retangulo(3, 5);
-    var quadrado = new Quadrado(6);
+    var contaPoupanca = new ContaPoupanca(100);
+    var contaCorrente = new ContaCorrente(100);
 
-    imprimirArea(retangulo);
-    imprimirArea(quadrado);
+    transferir(contaPoupanca);
+    transferir(contaCorrente);
 
-    //TODO QUADRADO É UM RETANGULO, MAS NEM TODO RETANGULO É UM QUADRADO
 
   }
 
-  private static void imprimirArea(Retangulo retangulo) {
-    System.out.println(retangulo.getArea());
+  private static void transferir(ContaCorrente contaCorrente) {
+    //Espera que cobre a taxa da conta corrente ou da poupança?
+    contaCorrente.transferir(100);
+    System.out.println(contaCorrente.saldo);
   }
 
 }
