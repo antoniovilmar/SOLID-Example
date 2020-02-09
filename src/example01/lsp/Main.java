@@ -14,6 +14,7 @@ public class Main {
 
   private static void transferir(ContaCorrente contaCorrente) {
     //Espera que cobre a taxa da conta corrente ou da poupança?
+    //Para "corrigir" será necessário fazer  um  instanceof
     contaCorrente.transferir(100);
     System.out.println(contaCorrente.saldo);
   }
